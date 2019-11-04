@@ -2,16 +2,16 @@ package local.patrickchow.country.countryassignment;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-public class country {
+public class Country {
 
     private AtomicLong counter = new AtomicLong();
-    private Long id;
+    private long id;
     private String name;
-    private int population;
+    private long population;
     private double landMassSize;
     private double medianAge;
 
-    public country(String name, int population, double landMassSize, double medianAge) {
+    public Country(String name, long population, double landMassSize, double medianAge) {
         this.id = counter.incrementAndGet();
         this.name = name;
         this.population = population;
@@ -19,11 +19,11 @@ public class country {
         this.medianAge = medianAge;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -35,11 +35,11 @@ public class country {
         this.name = name;
     }
 
-    public int getPopulation() {
+    public long getPopulation() {
         return population;
     }
 
-    public void setPopulation(int population) {
+    public void setPopulation(long population) {
         this.population = population;
     }
 
