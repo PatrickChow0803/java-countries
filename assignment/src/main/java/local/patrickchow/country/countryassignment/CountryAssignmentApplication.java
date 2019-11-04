@@ -8,6 +8,9 @@ public class CountryAssignmentApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CountryAssignmentApplication.class, args);
+
+
+
     }
 
 }
