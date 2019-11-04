@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Country {
 
-    private AtomicLong counter = new AtomicLong();
+    private static final AtomicLong counter = new AtomicLong();
     private long id;
     private String name;
     private long population;
